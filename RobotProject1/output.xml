@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.10.2 on win32)" generated="20220906 17:06:54.659" rpa="false">
+<suite id="s1" name="RobotProject1" source="C:\Users\amraq\eclipse-workspace\RobotProject1">
+<suite id="s1-s1" name="Test" source="C:\Users\amraq\eclipse-workspace\RobotProject1\test">
+<suite id="s1-s1-s1" name="TestSuite1" source="C:\Users\amraq\eclipse-workspace\RobotProject1\test\TestSuite1.robot">
+<test id="s1-s1-s1-t1" name="Sample Login Test">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://hysabat.jmmtest.xyz/login</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20220906 17:06:54.936" level="INFO">Opening browser 'chrome' to base url 'http://hysabat.jmmtest.xyz/login'.</msg>
+<status status="PASS" starttime="20220906 17:06:54.935" endtime="20220906 17:06:59.309"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" starttime="20220906 17:06:59.310" endtime="20220906 17:06:59.311"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>admin</arg>
+</arguments>
+<msg timestamp="20220906 17:06:59.312" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<status status="PASS" starttime="20220906 17:06:59.311" endtime="20220906 17:06:59.408"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>Admin@123</arg>
+</arguments>
+<msg timestamp="20220906 17:06:59.408" level="INFO">Typing text 'Admin@123' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20220906 17:06:59.408" endtime="20220906 17:06:59.519"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>class=ant-btn ant-btn-text login-btn</arg>
+</arguments>
+<msg timestamp="20220906 17:06:59.520" level="INFO">Clicking element 'class=ant-btn ant-btn-text login-btn'.</msg>
+<msg timestamp="20220906 17:07:02.676" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220906 17:07:02.678" level="FAIL">Element with locator 'class=ant-btn ant-btn-text login-btn' not found.</msg>
+<status status="FAIL" starttime="20220906 17:06:59.519" endtime="20220906 17:07:02.679"></status>
+</kw>
+<status status="FAIL" starttime="20220906 17:06:54.934" endtime="20220906 17:07:02.679" critical="yes">Element with locator 'class=ant-btn ant-btn-text login-btn' not found.</status>
+</test>
+<status status="FAIL" starttime="20220906 17:06:54.725" endtime="20220906 17:07:02.680"></status>
+</suite>
+<status status="FAIL" starttime="20220906 17:06:54.722" endtime="20220906 17:07:02.681"></status>
+</suite>
+<status status="FAIL" starttime="20220906 17:06:54.700" endtime="20220906 17:07:02.683"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="RobotProject1">RobotProject1</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Test">RobotProject1.Test</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="TestSuite1">RobotProject1.Test.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
